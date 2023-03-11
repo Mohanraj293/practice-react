@@ -12,6 +12,8 @@ export default class extends Component {
   increment() {
     this.setState({
       count: this.state.count + 1,
+    }, () => {
+        console.log(this.state.count);
     });
   }
   decrement() {
